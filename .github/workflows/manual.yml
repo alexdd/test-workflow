@@ -1,0 +1,11 @@
+name: Show Secret Password Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Show Password
+      run: echo "Prod Password ${{ secrets.prodPassword }}"
