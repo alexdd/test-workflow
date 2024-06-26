@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Show Password
-      run: echo "Prod Password ${{ secrets.prodPassword }}"
+      run: echo "Prod Password ${{ secrets.PROD_PASSWORD }}"
