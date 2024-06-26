@@ -7,5 +7,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Show Password
-      run: echo $secrets.PROD_PASSWORD 
+    - name: Print Password via python script
+      run: python test.py ${{secrets.PROD_PASSWORD}}
