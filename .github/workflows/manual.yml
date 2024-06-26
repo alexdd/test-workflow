@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Show Password
-      run: echo $secrets.PROD_PASSWORD
+      run: echo $secrets.PROD_PASSWORD 
