@@ -10,4 +10,6 @@ jobs:
     - name: checkout repo
       uses: actions/checkout@v4
     - name: Print Password via Python script
-      run: python test.py ${{secrets.PROD_PASSWORD}}
+      env:
+        PROD_PASSWORD: ${{ secrets.PROD_PASSWORD }}
+      run: python test.py ${{ PROD_PASSWORD }}
