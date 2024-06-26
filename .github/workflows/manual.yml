@@ -7,5 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Print Password via python script
+    - name: checkout repo
+      uses: actions/checkout@v4
+    - name: Print Password via Python script
       run: python test.py ${{secrets.PROD_PASSWORD}}
